@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #008B8B;
+}
+
+
+
+
+.position {
+	height: 597px;
+	width: 569px;
+}
+
+.flex {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.diaporamapeau {
+	position: absolute;
+	z-index: 1;
+	margin: 0 auto;
+	height: 597px;
+	width: 569px;
+	/*background-image: url(../img/orlan-accessoire.png);*/
+
+	animation-name: diaporamapeau;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: ;
+}
+
+@keyframes diaporamapeau{
+	0% {background-image: url(../img/peau0.png);}
+	33% {background-image: url(../img/peau1.png);}
+	66% {background-image: url(../img/peau2.png);}
+	100% {background-image: url(../img/peau0.png);}
+}
+
+.diaporamabouche {
+	position: absolute;
+	z-index: 2;
+	margin: 0 auto;
+	height: 597px;
+	width: 569px;
+	/*background-image: url(../img/orlan-accessoire.png);*/
+
+	animation-name: diaporamabouche;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: ;
+}
+
+@keyframes diaporamabouche{
+	0% {background-image: url(../img/bouche0.png);}
+	25% {background-image: url(../img/bouche1.png);}
+	50% {background-image: url(../img/bouche2.png);}
+	75% {background-image: url(../img/bouche3.png);}
+	100% {background-image: url(../img/bouche4.png);}
+}
+
+.diaporamahairD {
+	position: absolute;
+	z-index: 2;
+	margin: 0 auto;
+	height: 597px;
+	width: 569px;
+	/*background-image: url(../img/orlan-accessoire.png);*/
+
+	animation-name: diaporamahairD;
+	animation-duration: 25s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: ;
+}
+
+@keyframes diaporamahairD{
+	0% {background-image: url(../img/hair0.png);}
+	20% {background-image: url(../img/hair1.png);}
+	40% {background-image: url(../img/hair2.png);}
+	60% {background-image: url(../img/hair3.png);}
+	80% {background-image: url(../img/hair4.png);}
+	100% {background-image: url(../img/hair5.png);}
+}
+
+.diaporamahairG {
+	position: absolute;
+	z-index: 2;
+	margin: 0 auto;
+	height: 597px;
+	width: 569px;
+	/*background-image: url(../img/orlan-accessoire.png);*/
+
+	animation-name: diaporamahairG;
+	animation-duration: 25s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: ;
+}
+
+@keyframes diaporamahairG{
+	0% {background-image: url(../img/hairG0.png);}
+	25% {background-image: url(../img/hairG1.png);}
+	50% {background-image: url(../img/hairG2.png);}
+	75% {background-image: url(../img/hairG3.png);}
+	100% {background-image: url(../img/hairG3.png);}
+	
+}
+
+.diaporamaveste {
+	position: absolute;
+	z-index: 2;
+	margin: 0 auto;
+	height: 597px;
+	width: 569px;
+	/*background-image: url(../img/orlan-accessoire.png);*/
+
+	animation-name: diaporamaveste;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: ;
+}
+
+@keyframes diaporamaveste{
+	0% {background-image: url(../img/veste0.png);}
+	25% {background-image: url(../img/veste1.png);}
+	50% {background-image: url(../img/veste2.png);}
+	75% {background-image: url(../img/veste3.png);}
+	100% {background-image: url(../img/veste0.png);}
+	
+}
+
+.diaporamacornes {
+	position: absolute;
+	z-index: 2;
+	margin: 0 auto;
+	height: 597px;
+	width: 569px;
+	/*background-image: url(../img/orlan-accessoire.png);*/
+
+	animation-name: diaporamacornes;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: ;
+}
+
+@keyframes diaporamacornes{
+	0% {background-image: url(../img/cornes0.png);}
+	15% {background-image: url(../img/cornes1.png);}
+	30% {background-image: url(../img/cornes2.png);}
+	45% {background-image: url(../img/cornes3.png);}
+	60% {background-image: url(../img/cornes3.png);}
+	75% {background-image: url(../img/veste2.png);}
+	90% {background-image: url(../img/cornes1.png);}
+	100% {background-image: url(../img/cornes0.png);}
+	
+	
+}
+
+.template {
+	background-image: url(../img/lunettes.png);
+	position: relative;
+	z-index: 10;
+	height: 597px;
+	width: 569px;
+}
+
+.button-start {
+	display: flex;
+	height: 100px;
+	width: 100px;
+	background-color: #C0C0C0;
+	margin:0 auto;
+}
+
+.button-start:hover {
+}
+	
+
+/*
+.peau0 {
+	background-image: url(../img/peau0.png);
+	position:absolute;
+	z-index: 4;
+	height: 597px;
+	width: 569px;
+}
+
+.peau1 {
+	background-image: url(../img/peau1.png);
+	position:absolute;
+	z-index: 2;
+	height: 597px;
+	width: 569px;
+}
+
+.peau2 {
+	background-image: url(../img/peau2.png);
+	position:absolute;
+	z-index: 1;
+	height: 597px;
+	width: 569px;
+}*/
