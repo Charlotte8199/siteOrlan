@@ -10,7 +10,7 @@ body {
 
 
 
-
+/* orlan.html */
 .position {
 	height: 597px;
 	width: 569px;
@@ -177,15 +177,37 @@ body {
 	width: 569px;
 }
 
-.button-start {
-	display: flex;
-	height: 100px;
-	width: 100px;
-	background-color: #C0C0C0;
+.button-start a {
+	display: block;
+	height: 141px;
+	width: 273px;
+	background-image: url(../img/boutonentrer.png);
 	margin:0 auto;
 }
 
-.button-start:hover {
+.button-start a:hover {
+}
+
+/* fin de orlan.html */
+
+/* accueil.html */
+.navigation {
+	font-size: 30px;
+	color: #000000;
+	font-family: 'Gaegu', cursive;
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 17vh
+}
+
+.navigation li {
+	color: #C0C0C0;
+}
+
+
+.headerclass {
+	background-color: #C0C0C0;
 }
 	
 
