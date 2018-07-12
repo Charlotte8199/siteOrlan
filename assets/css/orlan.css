@@ -194,20 +194,27 @@ body {
 .navigation {
 	font-size: 30px;
 	color: #000000;
-	font-family: 'Gaegu', cursive;
+	font-family: 'Anton', sans-serif;
+	font-weight: bolder;
 	display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 17vh
+    height: 6vh
 }
 
 .navigation li {
 	color: #C0C0C0;
 }
 
+.navigation li a {
+	text-decoration: none;
+	color: #B22222;
+}
+
 
 .headerclass {
 	background-color: #C0C0C0;
+	height: 100px;
 }
 	
 
