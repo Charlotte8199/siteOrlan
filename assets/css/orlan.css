@@ -1,3 +1,4 @@
+/*general*/
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@ body {
 
 
 
-/* orlan.html */
+/* index.html */
 .position {
 	height: 597px;
 	width: 569px;
@@ -185,12 +186,11 @@ body {
 	margin:0 auto;
 }
 
-.button-start a:hover {
-}
-
-/* fin de orlan.html */
+/* fin de index.html */
 
 /* accueil.html */
+
+/*header*/
 .navigation {
 	font-size: 30px;
 	color: #000000;
@@ -199,7 +199,8 @@ body {
 	display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 6vh
+    height: 6vh;
+    list-style-type: none;
 }
 
 .navigation li {
@@ -216,13 +217,26 @@ body {
 	background-color: #C0C0C0;
 	height: 100px;
 }
-	
+/*fin header */
 
-/*
+
+/* image */
+.lunettes {
+    position: relative;
+    flex: 1;
+    width: 50%;
+    margin: 20px;
+}
+
+.lunettes img {
+    position: absolute;
+    height: 100%;
+}
+	
 .peau0 {
 	background-image: url(../img/peau0.png);
 	position:absolute;
-	z-index: 4;
+	z-index: 9;
 	height: 597px;
 	width: 569px;
 }
@@ -241,4 +255,33 @@ body {
 	z-index: 1;
 	height: 597px;
 	width: 569px;
-}*/
+}
+
+/* menu couleurs */
+.flex2 {
+	display: flex;
+}
+
+.navigationcouleurs li {
+	list-style-type: none;
+}
+
+.navigationcouleurs li a {
+	font-size: 30px;
+	color: #000000;
+	font-family: 'Anton', sans-serif;
+	font-weight: bolder;
+	display: flex;
+    justify-content: space-evenly;
+    height: 4vh;
+    list-style-type: none;
+    text-align: left;
+}
+
+.menucouleurs {
+	flex: 1;
+    background-color: #C0C0C0;
+    width: 50%;
+    margin: 20px;
+}
+/* fin menu couleurs */
