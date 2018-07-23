@@ -41,7 +41,7 @@ $( document ).ready(function() {
     var hairGPosition = 0;
     $('#BoutonHairG').mousedown(function (){
     	hairGPosition++
-    	if (hairGPosition==6) {
+    	if (hairGPosition==4) {
     		hairGPosition=0	
     	}
     $('#hairG').attr("src", hairG[hairGPosition])
@@ -70,6 +70,24 @@ $( document ).ready(function() {
     	}	
     $('#veste').attr("src", veste[vestePosition])
     });    
+
+
+
+    // création d'un bouton aléatoire
+    $('#BoutonRandom').mousedown(function(){
+    	peauPosition= Math.floor(Math.random()*3)
+    	$('#peau').attr("src", peau[peauPosition])
+    	bouchePosition= Math.floor(Math.random()*5)
+    	$('#bouche').attr("src", bouche[bouchePosition])
+    	hairPosition= Math.floor(Math.random()*6)
+    	$('#hair').attr("src", hair[hairPosition])
+    	hairGPosition= Math.floor(Math.random()*4)
+    	$('#hairG').attr("src", hairG[hairGPosition])
+    	cornesPosition= Math.floor(Math.random()*4)
+    	$('#cornes').attr("src", cornes[cornesPosition])
+    	vestePosition= Math.floor(Math.random()*4)
+    	$('#veste').attr("src", veste[vestePosition])
+    })
 });
 
 
