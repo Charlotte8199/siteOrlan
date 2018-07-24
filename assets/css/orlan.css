@@ -364,6 +364,34 @@ body {
     }
 
 
+    .container {
+  	width: 100%;
+    position: relative;
+    top: 180px;
+    left: 156px;
+	}
+
+	.eye {
+	  position: relative;
+	  display: inline-block;
+	  border-radius: 50%;
+	  height: 30px;
+	  width: 30px;
+	}
+	.eye:after { /*pupil*/
+	  position: absolute;
+	  bottom: 17px;
+	  right: 10px;
+	  width: 10px;
+	  height: 10px;
+	  background: #000;
+	  border-radius: 50%;
+	  content: " ";
+	}
+
+	.eyemarg {
+		margin-left: 20px;
+	}
 
     /* fin menu couleurs */
     } *

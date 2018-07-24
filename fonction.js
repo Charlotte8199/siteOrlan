@@ -87,7 +87,32 @@ $( document ).ready(function() {
     	$('#cornes').attr("src", cornes[cornesPosition])
     	vestePosition= Math.floor(Math.random()*4)
     	$('#veste').attr("src", veste[vestePosition])
-    })
+    });
+
+
+$("body").mousemove(function(event) {
+  var eye = $(".eye");
+  var x = (eye.offset().left) + (eye.width() / 2);
+  var y = (eye.offset().top) + (eye.height() / 2);
+  var rad = Math.atan2(event.pageX - x, event.pageY - y);
+  var rot = (rad * (180 / Math.PI) * -1) + 180;
+  eye.css({
+    '-webkit-transform': 'rotate(' + rot + 'deg)',
+    '-moz-transform': 'rotate(' + rot + 'deg)',
+    '-ms-transform': 'rotate(' + rot + 'deg)',
+    'transform': 'rotate(' + rot + 'deg)'
+  });
+});
+
+
+
+
+    // petit code pour récupérer la position de la souris 
+    $(document).ready(function(){
+    $(document).mousemove(function(event){ 
+    $("span").text("X: " + event.pageX + ", Y: " + event.pageY);
+    });
+});
 });
 
 
